@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 소개</title>
+</head>
+<body>
+    <p>대한민국 역습입니다.</p>
+    <p class="comment">손흥민 크로스</p>
+    <p class="comment" id="goal">조규성의 마무리</p>
+
+    <script>
+        // 입력 - 처리 - 출력
+        const p = document.querySelector("p")
+        console.log(p.textContent)
+        p.textContent = "우로과이의 역습입니다."
+    </script>
+</body>
+</html>
+
+<!-- 브라우저는 HTML코드를 해석해서 요소들을 트리 형태로 구조화해 표현하는
+문서(객체)를 생성한다. 이를 DOM이라 하며, 브라우저는 DOM을 통해 화면에 웹 콘텐츠들을 렌더링 한다.
+DOM은 웹 콘텐츠를 추가, 수정,삭제하거나 마우스 클릭, 키보드 타이핑 등 인벤트에 대한 처리
+를 정의할 수 있도록 제공되는 프로그래밍 인터페이스(interface)이다. 
+window.document는 페이지 콘텐츠, 즉DOM에 대한 진입점 역할을 하는 프로그래밍
+인턴페이스 이다! 이를 이용하면 페이지의 정보를 얻거나 웹요소를 생성 및 조작할 수 있다.-->
